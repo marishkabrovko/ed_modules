@@ -1,3 +1,16 @@
 from django.db import models
 
-# Create your models here.
+
+class EducationalModule(models.Model):
+    order_number = models.PositiveIntegerField(unique=True, verbose_name="Порядковый номер")
+    title = models.CharField(max_length=255, verbose_name="Название")
+    description = models.TextField(verbose_name="Описание")
+    is_published = models.BooleanField(default=False, verbose_name='Статус публикации')
+
+    class Meta:
+        ordering = ['order_number']
+        verbose_name = 'Образовательный модуль'
+        verbose_name_plural = 'Образовательные модули'
+
+    def __str__(self):
+        return self.title
