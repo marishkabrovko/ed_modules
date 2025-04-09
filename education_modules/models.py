@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class EducationalModule(models.Model):
+class EducationModule(models.Model):
     order_number = models.PositiveIntegerField(unique=True, verbose_name="Порядковый номер")
     title = models.CharField(max_length=255, verbose_name="Название")
     description = models.TextField(verbose_name="Описание")
