@@ -2,7 +2,7 @@ from django.db import models
 
 
 class EducationModule(models.Model):
-    order_number = models.PositiveIntegerField(unique=True, verbose_name="Порядковый номер")
+    order_number = models.PositiveIntegerField(verbose_name="Порядковый номер")
     title = models.CharField(max_length=255, verbose_name="Название")
     description = models.TextField(verbose_name="Описание")
     is_published = models.BooleanField(default=False, verbose_name='Статус публикации')
