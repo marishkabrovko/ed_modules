@@ -1,6 +1,5 @@
 import os
 import sys
-
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -13,7 +12,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -74,7 +73,9 @@ else:
             "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
             "HOST": os.getenv("DATABASE_HOST"),
             "PORT": os.getenv("POSTGRES_PORT"),
-            "OPTIONS": {"client_encoding": "utf8", },
+            "OPTIONS": {
+                "client_encoding": "utf8",
+            },
         }
     }
 
@@ -115,14 +116,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.AllowAny',
-    ),
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.AllowAny",),
 }
 
 CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': 'redis://localhost:6379/1',
+    "default": {
+        "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        "LOCATION": "redis://localhost:6379/1",
     }
 }
