@@ -45,4 +45,4 @@ docker compose up --build
 
 ### 5. Тесты
 
-Total coverage - 92%
+Total coverage - 91%
