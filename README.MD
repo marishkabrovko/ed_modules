@@ -37,11 +37,11 @@ docker compose up --build
 ### 4. Эндпойнты 
 
 #### Образовательные модули
-- GET /api/modules/ — Получить список образовательных модулей.
-- POST /api/modules/ — Создать новый образовательный модуль.
-- GET /api/modules/{id}/ — Получить информацию о модуле.
-- PATCH /api/modules/{id}/ — Обновить образовательный модуль.
-- DELETE /api/modules/{id}/ — Удалить образовательный модуль.
+- GET /education_modules/ — Получить список образовательных модулей.
+- POST /education_modules/ — Создать новый образовательный модуль.
+- GET /education_modules/{id}/ — Получить информацию о модуле.
+- PATCH /education_modules/{id}/ — Обновить образовательный модуль.
+- DELETE /education_modules/{id}/ — Удалить образовательный модуль.
 
 ### 5. Тесты
 
