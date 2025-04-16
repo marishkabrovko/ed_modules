@@ -1,0 +1,42 @@
+[
+  {
+    "model": "education_modules.educationmodule",
+    "pk": 1,
+    "fields": {
+      "order_number": 1,
+      "title": "Введение в программирование",
+      "description": "Основные понятия алгоритмизации и логики.",
+      "is_published": true
+    }
+  },
+  {
+    "model": "education_modules.educationmodule",
+    "pk": 2,
+    "fields": {
+      "order_number": 2,
+      "title": "Основы Python",
+      "description": "Переменные, типы данных, условия, циклы.",
+      "is_published": true
+    }
+  },
+  {
+    "model": "education_modules.educationmodule",
+    "pk": 3,
+    "fields": {
+      "order_number": 3,
+      "title": "ООП в Python",
+      "description": "Классы, наследование, полиморфизм, инкапсуляция.",
+      "is_published": true
+    }
+  },
+  {
+    "model": "education_modules.educationmodule",
+    "pk": 4,
+    "fields": {
+      "order_number": 4,
+      "title": "Работа с Django",
+      "description": "Основы фреймворка Django, модели, представления и шаблоны.",
+      "is_published": false
+    }
+  }
+]
